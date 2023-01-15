@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.425))no-repeat fixed, url(resources/treesAustin.jpg)no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+}
+a:hover {
+    color:blueviolet;
+}
+
+.footer , .header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    padding: 10px;
+    
+}
+
+.logo {
+    margin: 0;
+    padding; 0;
+    max-height: 100px;
+    flex-shrink:1;
+
+
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+
+.text {
+    font-family:'Segoe UI';
+    font-stretch:wider;
+    font-size: 25px;
+    font-weight: 350;
+    color:rgb(223, 172, 111);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer {
+    position: relatice;
+    background-color: rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    gap:10px;
+    left:0;
+    right:0;
+    margin:0;
+}
+
+.footerHeader {
+    font-family:'Segoe UI';
+    font-stretch:;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(155, 155, 155, 0.479);
+}
+
+.github 
+{
+    
+    filter:opacity(0.179);
+    height: 25px;
+    display: inline-block;
+    
+}
+
+
+.github:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
