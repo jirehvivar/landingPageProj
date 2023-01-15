@@ -2,16 +2,68 @@ html {
     height: 100%;
 }
 body {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.425))no-repeat fixed, url(resources/treesAustin.jpg)no-repeat center center fixed;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.425))no-repeat fixed, url(resources/Standgrad.jpg)no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-flow: column wrap;
     flex-direction: column;
 }
 
+.descriptionContainer {
+    display: flex;
+    
+    flex-direction: crow;
+    align-items: space-between;
+    width: 90%;
+    justify-content: center;
+    margin-top: em;
+    margin-bottom:20em;
+
+}
+
+.title {
+
+    font-family: "normalBebas";
+    font-size: 80px;
+    color:rgb(226, 136, 148);;
+    text-align: center;
+    align-self:center;
+    text-shadow: rgb(167, 162, 146) 1px 0 9px;
+    width: 300px;
+    border: 10px double rgba(243, 243, 243, 0.568);
+    box-shadow: rgb(167, 162, 146) 1px 0 9px ;
+    padding: 100px 100px;
+    margin: 20px;
+    margin-left: 1em;
+
+}
+
+.description {
+    
+    font-family:"book";
+    color: rgb(233, 172, 177);
+    font-size: 23px;
+    text-align: center;
+    width: 300px;
+    border: 0px double rgba(0, 0, 0, 0);
+    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.33);
+    box-shadow: rgb(167, 162, 146) 1px 0 9px ;
+    padding: 30px 80px;
+    margin: 5px;
+    margin-left: 15em;
+    gap:3px;
+    word-spacing: 10px;
+    align-self: center;
+}
+
+
+
 a {
     text-decoration: none;
-    color: bisque;
+    color: rgb(226, 136, 148);
 }
 a:hover {
     color:blueviolet;
@@ -47,24 +99,41 @@ ul {
     font-stretch:wider;
     font-size: 25px;
     font-weight: 350;
-    color:rgb(223, 172, 111);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
+    height: 150px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.945));
 }
 
 .block{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
+#grad {
+    height:400px;
+    border-radius: 3em;
+}
+.grew {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: fit-content;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+
+}
 
 .footer {
-    position: relatice;
+    position: relative;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.63);
     display: flex;
     flex-direction: row;
@@ -72,9 +141,6 @@ ul {
     justify-content: center;
     font-size: small;
     gap:10px;
-    left:0;
-    right:0;
-    margin:0;
 }
 
 .footerHeader {
@@ -82,13 +148,13 @@ ul {
     font-stretch:;
     font-size: 20px;
     font-weight: 300;
-    color: rgba(155, 155, 155, 0.479);
+    color: rgba(155, 155, 155, 0.637);
 }
 
 .github 
 {
     
-    filter:opacity(0.179);
+    filter:opacity(0.379);
     height: 25px;
     display: inline-block;
     
@@ -99,4 +165,19 @@ ul {
 {
     transform: scale(1.2);
     transition-duration: 0.5s;
+}
+
+@font-face {
+    font-family: "skinny";
+    src: url(resources/BebasNeue-Light.ttf);
+}
+
+@font-face {
+    font-family: "normalBebas";
+    src: url(resources/BebasNeue-Regular.otf);
+}
+
+@font-face {
+    font-family: "book" ;
+    src: url(resources/BebasNeue-Book.ttf);
 }
