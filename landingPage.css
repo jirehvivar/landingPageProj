@@ -11,62 +11,16 @@ body {
     flex-direction: column;
 }
 
-.block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.descriptionContainer {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    width: 90%;
-    margin-top: 10em;
-    margin-bottom:20em;
-    margin-left: 20px;
-    padding: 50px 80px;
-    border-left: 5px rgb(253, 242, 204);
-
-}
 
 
-
-.title {
-
-    font-family: "normalBebas";
-    font-size: 80px;
-    color:rgb(253, 242, 204);
-    text-align: center;
-}
-
-.description {
-    
-    font-family:"book";
-    color: rgb(253, 242, 204);
-    font-size: 23px;
-    text-align: center;
-    width: 300px;
-    border: 0px single rgba(0, 0, 0, 0);
-    border-radius: 2em;
-    background-color: rgba(0, 0, 0, 0.33);
-    box-shadow: rgb(167, 162, 146) 1px 0 9px ;
-    padding: 30px 80px;
-    margin: 5px;
-    margin-left: 15em;
-    gap:3px;
-    word-spacing: 10px;
-    align-self: center;
-}
-
-
+/*header*/
 
 a {
     text-decoration: none;
-    color: rgb(253, 242, 204);
+    color: rgba(102, 102, 102, 0.721);
 }
 a:hover {
-    color:rgb(233, 172, 177);
+    color:rgb(132, 117, 66);
 }
 
 .footer , .header {
@@ -82,8 +36,6 @@ a:hover {
     padding; 0;
     max-height: 100px;
     flex-shrink:1;
-
-
 }
 
 
@@ -106,14 +58,59 @@ ul {
     justify-content: space-between;
     margin-right: 30px;
     height: 150px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.945));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.639));
 }
 
 
-#grad {
-    height:400px;
-    border-radius: 3em;
+
+/*first view section*/
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.first{
+    width:50em;
+}
+
+.border:before {
+    content: "";
+    z-index: 1;
+    display:block;
+    position:absolute;
+    top:60%;
+    left: 15%;
+    border: 2px solid rgb(217, 191, 138);
+    transform: translate(-50%,-50%);
+    animation:border-animation 2s forwards;
+
+}
+
+.animated-text , .subtext {
+    
+    transform: translate(-50%,-50%);
+    display: flex;
+    font-family: "book";
+    font-weight: 600;
+    font-size: 80px;
+    text-shadow: rgb(0, 0, 0)1px 0px 10px ;
+    color:rgb(217, 191, 138);
+    animation:  slideIn 2s forwards;
+}
+
+.subtext {
+    justify-content: right;
+    margin-top: -2em;
+    margin-bottom:9em;
+    font-family: "skinny";
+    font-size:20px;
+}
+
+
+
+/*description of home city section*/
 .grew {
     display: flex;
     align-items: center;
@@ -125,6 +122,10 @@ ul {
 
 }
 
+
+
+
+/*the footer etc*/
 .footer {
     position: relative;
     width: 100%;
@@ -175,4 +176,35 @@ ul {
     font-family: "book" ;
     src: url(resources/BebasNeue-Book.ttf);
 } 
+
+@keyframes slideIn {
+    0% {
+       opacity:0;
+       transform:translateX(-45%);
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity:0.5;
+        transform:translateX(5%) ;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes border-animation {
+    0% {
+        transform: translate(-50%, -50%)scaleY(0);
+    }
+    50% {
+        transform: translate(-50%,-50%)scaleY(80);
+    }
+    100% {
+        transform: translate(-50%, -50%)scaleY(65);
+    }
+}
 
