@@ -33,7 +33,6 @@ a:hover {
 
 .logo {
     margin: 0;
-    padding; 0;
     max-height: 90px;
 }
 
@@ -153,8 +152,29 @@ ul {
 }
 
 
+/*this is the section with my logos of knowledge*/
+.blockedout {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.backImage {
+    padding-right: 4em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(197, 67, 67, 0.63);
+min-width: none;
+}
 
+.images{
 
+    display: flex;
+    height: 1%;
+    width: 1%;
+    aspect-ratio:1/2;
+    object-fit:contain;
+}
 /*the footer etc*/
 .footer {
     position: relative;
