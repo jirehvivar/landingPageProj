@@ -34,8 +34,7 @@ a:hover {
 .logo {
     margin: 0;
     padding; 0;
-    max-height: 100px;
-    flex-shrink:1;
+    max-height: 90px;
 }
 
 
@@ -112,6 +111,7 @@ ul {
 
 /*description of home city section*/
 .grew {
+    padding-right: 4em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -120,6 +120,36 @@ ul {
     position: relative;
     background-color: rgba(0, 0, 0, 0.63);
 
+}
+
+.boxText{
+    display: flex;
+    flex-wrap: wrap;
+    margin:1em;
+    align-content: center; 
+    justify-content: center;
+    color:rgb(217, 174, 138);
+    font-family: "book";
+    font-weight: 600;
+    font-size: 40px;
+    gap: 6px;
+    text-shadow: rgb(0, 0, 0)1px 0px 10px ;
+    padding: 20px 70px;
+}
+.writtenContainer {
+    flex-wrap: wrap;
+    flex-flow: columns;
+    flex-direction: columns;
+}
+.Boxsubtext {
+    text-align: center;
+    font-family:"skinny";
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-stretch:50px;
+    font-size:20px;
+    color: rgb(228, 218, 196);
 }
 
 
@@ -176,6 +206,11 @@ ul {
     font-family: "book" ;
     src: url(resources/BebasNeue-Book.ttf);
 } 
+
+@font-face {
+    font-family: "mauruce";
+    src: url(resources/mauruce.ttf);
+}
 
 @keyframes slideIn {
     0% {
