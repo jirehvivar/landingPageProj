@@ -26,9 +26,6 @@ a:hover {
 .footer , .header {
     display: flex;
     justify-content: center;
-    position: sticky;
-    padding: 10px;
-    
 }
 
 .logo {
@@ -113,7 +110,9 @@ ul {
 .grew {
     padding-right: 4em;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
     text-align: center;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.63);
@@ -123,7 +122,8 @@ ul {
 .boxText{
     
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
     color:rgb(217, 174, 138);
     font-family: "book";
     font-weight: 600;
@@ -132,12 +132,8 @@ ul {
     text-shadow: rgb(0, 0, 0)1px 0px 10px ;
     
 }
-.writtenContainer {
-    margin-top: 10em;
-text-align: center;
-justify-content: center;
-    background-color: blue;
-}
+
+
 .Boxsubtext {
 
     text-align: center ;
@@ -148,7 +144,7 @@ justify-content: center;
     font-stretch:50px;
     font-size:20px;
     color: rgb(228, 218, 196);
-    padding: 1px;
+    padding: 4px 80px;
 
 }
 
