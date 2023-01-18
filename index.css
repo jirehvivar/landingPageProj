@@ -50,12 +50,17 @@ ul {
 
 .header {
     display: flex;
+    position: relative; 
     justify-content: space-between;
-    margin-right: 30px;
+    
     height: 150px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.639));
 }
 
+
+.left-links {
+    margin-right: 3em;
+}
 
 
 /*first view section*/
@@ -150,12 +155,16 @@ ul {
 
 
 /*this is the section with my logos of knowledge*/
+.languagesExplanation {
+    background-color: rgb(33, 56, 61);
+}
 .blockedout {
 display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
 width:100%;
+
 align-items: center;
 justify-content: center;
 
@@ -165,7 +174,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: rgba(197, 67, 67, 0.63);
+    background-color: rgb(33, 56, 61);
     max-width: 100%;
 }
 
@@ -179,6 +188,31 @@ justify-content: center;
     aspect-ratio:3/2;
     object-fit:contain;
 }
+
+#cpp:hover , #html:hover , #javascript:hover , #css:hover {
+    transform:scale(1.06);
+    transition: 0.5s;
+    filter:brightness(50%);
+}
+#hoverCpp , #hoverhtml , #hoverjs , #hoverCss {
+
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    gap: 50px;
+    object-fit: cover;
+    align-self: center;
+    font-family: "normalBebas";
+    letter-spacing: 2px;
+    font-weight: bold;
+    color:rgb(217, 174, 138);
+    text-shadow: 2px 2px 20px black;
+    opacity:0;
+}
+
+
+
+
 /*the footer etc*/
 .footer {
     position: relative;  
