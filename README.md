@@ -5,7 +5,6 @@ Personal software engineering portfolio showcasing selected projects, technical 
 ## Live Site
 
 - **Website:** https://your-portfolio-name.vercel.app  
-- **GitHub:** https://github.com/your-username  
 
 ## Overview
 
