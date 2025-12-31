@@ -4,8 +4,7 @@ Personal software engineering portfolio showcasing selected projects, technical 
 
 ## Live Site
 
-- **Website:** [https://your-portfolio-name.vercel.app  ](https://landing-page-proj.vercel.app/)
-
+- **Website:** (https://jirehvivar-portfolio.vercel.app/)
 ## Overview
 
 This website serves as a central place to explore my work as a software engineering student at the University of Texas at Dallas. It highlights projects that emphasize clean architecture, interactive interfaces, and data-driven systems — with a strong focus on usability, clarity, and thoughtful design.
