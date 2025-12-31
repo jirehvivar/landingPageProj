@@ -1,0 +1,36 @@
+.header{ position:fixed; top:16px; left:0; right:0; z-index:50; }
+.nav{
+  width:min(1160px, 92vw);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 14px;
+  border-radius:18px;
+  background:rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(12px);
+}
+.brand{ font-weight:800; letter-spacing:.02em; }
+.navlinks{ display:flex; gap:16px; align-items:center; }
+.navlinks a{ color:rgba(255,255,255,.78); font-size:14px; }
+.navlinks a:hover{ color:var(--gold); }
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.brand-logo{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.brand:hover .brand-logo{
+  opacity: 5;
+}

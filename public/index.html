@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/resources/StrechedGoldG.png" />
+
+
+    <title>Jireh Vivar</title>
+    <meta name="description" content="Jireh Vivar — Portfolio" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Prevent white flash before CSS loads -->
+    <style>
+      html, body { background: #000; color: #e5e5e5; margin: 0; padding: 0; }
+    </style>
+
+    <!-- Preload hero background + font -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/resources/Standgrad.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="%PUBLIC_URL%/resources/BebasNeue-Regular.otf"
+      type="font/otf"
+      crossorigin
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.tech-grid {
+  margin-top: 24px;
+}
+
+.tech-card {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tech-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.tech-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+}
