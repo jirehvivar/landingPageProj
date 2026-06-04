@@ -13,8 +13,10 @@ export default function Projects() {
       linkLabel: "View Project",
     },
     {
-      title: "Snake Game",
-      desc: "Interactive grid-based game featuring real-time state updates, collision logic, and responsive controls.",
+      title: "Ad-Astra",
+      desc: "Ad Astra is a space-themed tycoon game where players collect asteroids for currency, build ship modules, and upgrade their spaceship to expand their resource production and progression.",
+      link: "https://play.unity.com/en/games/b51345d6-1161-4623-896b-5e3537929860/ad-astra",
+      linkLabel: "View Project",
     },
   ];
 
