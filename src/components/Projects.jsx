@@ -18,6 +18,25 @@ export default function Projects() {
       link: "https://play.unity.com/en/games/b51345d6-1161-4623-896b-5e3537929860/ad-astra",
       linkLabel: "View Project",
     },
+    {
+      title: "Neodymium",
+      desc: "Library management system with a Django + SQLite backend and a cozy-bookshop React frontend — live catalog search across 25,000 books with cover art, checkouts, borrower cards, and fine tracking.",
+      link: "https://jirehvivar.github.io/Neodymium/",
+      linkLabel: "View Project",
+    },
+    {
+      title: "Portfolio Game",
+      desc: "Explorable 3D portfolio built with Three.js and React Three Fiber — walk through a game world where each area presents a project, instead of scrolling a page. In active development.",
+      link: "https://jirehvivar.github.io/portfolioGame/",
+      linkLabel: "View Project",
+    },
+    {
+      title: "Refundly",
+      desc: "AI customer-support agent that approves or denies e-commerce refunds through tool-calling. A deterministic policy engine keeps final authority over every refund — even a jailbroken model can't move money — while an admin dashboard streams the agent's reasoning live and a voice pipeline shares the same enforcement path.",
+      link: "https://github.com/jirehvivar/refundly",
+      linkLabel: "View Code",
+    },
+
   ];
 
   return (
