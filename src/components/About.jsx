@@ -1,4 +1,4 @@
-import { useInView, useScrollY } from "../hooks";
+import { useInView, useMediaQuery, useScrollY } from "../hooks";
 
 const fragments = [
   {
@@ -21,8 +21,11 @@ const fragments = [
 export default function About() {
   const { ref, inView } = useInView();
   const y = useScrollY();
+  // Parallax drift only works when the cards sit in separate columns;
+  // stacked single-column layout (<768px) would make them overlap.
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   const offsets = [-30, 20, -15];
-  const speeds = [0.05, -0.06, 0.04];
+  const speeds = isDesktop ? [0.05, -0.06, 0.04] : [0, 0, 0];
 
   return (
     <section className="section" id="about" ref={ref}>
