@@ -1,22 +1,24 @@
-.tech-grid {
-  margin-top: 24px;
-}
+.tech-grid{ margin-top:80px; }
 
-.tech-card {
-  min-height: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.tech-card{ padding:28px; }
+.tech-card-tag{
+  margin-bottom:12px;
+  font-family:var(--font-mono);
+  font-size:0.6rem;
+  letter-spacing:0.3em;
+  color:var(--teal);
 }
-
-.tech-card h3 {
-  font-size: 1.05rem;
-  margin-bottom: 6px;
-  color: #fff;
+.tech-card-title{
+  margin:0 0 12px;
+  font-size:1.1rem;
+  font-weight:600;
+  letter-spacing:0.02em;
+  color:#fff;
 }
-
-.tech-card p {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.4;
+.tech-card-body{
+  margin:0;
+  font-family:var(--font-mono);
+  font-size:0.7rem;
+  line-height:1.7;
+  color:var(--sand);
 }

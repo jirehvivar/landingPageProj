@@ -1,5 +1,97 @@
 .footer{
-  padding:46px 0;
-  border-top:1px solid rgba(255,255,255,.10);
-  color:rgba(255,255,255,.65);
+  position:relative;
+  border-top:1px solid oklch(0.45 0.08 60 / 0.4);
+  padding-top:64px;
+}
+
+.footer-grid{
+  display:grid;
+  gap:8px;
+  grid-template-columns:1fr;
+}
+@media (min-width:768px){
+  .footer-grid{ grid-template-columns:repeat(5, 1fr); }
+  .footer-brand{ grid-column:span 2; }
+  .footer-panel-wide{ grid-column:span 2; }
+}
+
+.footer-brand{ padding:24px; }
+.footer-brand-tag{
+  font-family:var(--font-mono);
+  font-size:0.6rem;
+  letter-spacing:0.4em;
+  color:oklch(0.78 0.15 195 / 0.8);
+}
+.footer-brand-title{
+  margin-top:12px;
+  font-family:var(--font-display);
+  font-size:1.5rem;
+  font-weight:700;
+  line-height:1.2;
+  color:#fff;
+}
+
+.footer-panel{ padding:24px; }
+.footer-panel-tag{
+  margin-bottom:16px;
+  font-family:var(--font-mono);
+  font-size:0.6rem;
+  letter-spacing:0.3em;
+  color:var(--sage);
+}
+
+.footer-expertise{
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-family:var(--font-mono);
+  font-size:0.7rem;
+  color:oklch(0.78 0.08 75 / 0.8);
+}
+.footer-expertise li{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  margin-bottom:8px;
+}
+.footer-dot{
+  margin-top:5px;
+  height:6px;
+  width:6px;
+  flex-shrink:0;
+  background:var(--teal);
+  box-shadow:0 0 8px var(--teal);
+}
+
+.footer-contact{
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-family:var(--font-mono);
+  font-size:0.7rem;
+}
+.footer-contact li{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  border-bottom:1px dashed oklch(0.45 0.08 60 / 0.4);
+  padding-bottom:4px;
+  margin-bottom:8px;
+}
+.footer-contact-key{ color:var(--muted-foreground); }
+.footer-contact a, .footer-contact li > span:last-child{ color:var(--sand); }
+.footer-contact a:hover{ color:var(--teal); }
+
+.footer-bottom{
+  margin-top:48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  padding-bottom:32px;
+  font-family:var(--font-mono);
+  font-size:0.6rem;
+  letter-spacing:0.3em;
+  color:var(--muted-foreground);
 }

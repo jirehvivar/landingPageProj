@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/globals.css";
+import "./styles/intro.css";
 import "./styles/header.css";
 import "./styles/hero.css";
 import "./styles/about.css";

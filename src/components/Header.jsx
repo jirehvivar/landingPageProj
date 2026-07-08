@@ -1,33 +1,39 @@
 export default function Header() {
+  const items = [
+    ["HOME", "#top"],
+    ["ABOUT", "#about"],
+    ["FOUNDATIONS", "#tech"],
+    ["PROJECTS", "#projects"],
+  ];
+
   return (
-    <header className="header">
-      <div className="nav">
-        {/* Brand */}
-        <div className="brand">
-          <img
-            src="/resources/StrechedGoldG.png"
-            alt="Jireh Vivar logo"
-            className="brand-logo"
-          />
-          <span>Jireh Vivar</span>
-        </div>
-
-        {/* Navigation */}
-        <nav className="navlinks">
-          <a href="#about">About</a>
-          <a href="#tech">Tech</a>
-          <a href="#projects">Projects</a>
-
-          <a
-            className="btn"
-            href="https://github.com/jirehvivar"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub ↗
-          </a>
-        </nav>
+    <>
+      {/* Minimal fixed top bar */}
+      <div className="topbar">
+        <a href="#top" className="topbar-brand">JIREH VIVAR</a>
+        <a
+          className="btn-mosaic btn-mosaic-sm"
+          href="https://github.com/jirehvivar"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
       </div>
-    </header>
+
+      {/* Staggered side navigation */}
+      <nav className="sidenav" aria-label="Sections">
+        {items.map(([label, href], i) => (
+          <a
+            key={label}
+            href={href}
+            className="sidenav-link"
+            style={{ transform: `translateX(${i * 6}px)` }}
+          >
+            <span className="btn-mosaic btn-mosaic-sm">{label}</span>
+          </a>
+        ))}
+      </nav>
+    </>
   );
 }

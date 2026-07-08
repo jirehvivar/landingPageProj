@@ -1,0 +1,38 @@
+.about-chips{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:24px;
+}
+
+.about-grid{
+  margin-top:80px;
+  display:grid;
+  gap:24px;
+  grid-template-columns:1fr;
+}
+@media (min-width:768px){
+  .about-grid{ grid-template-columns:repeat(3, 1fr); }
+}
+
+.about-card{ padding:32px; }
+.about-card-tag{
+  margin-bottom:12px;
+  font-family:var(--font-mono);
+  font-size:0.6rem;
+  letter-spacing:0.3em;
+  color:var(--teal);
+}
+.about-card-title{
+  margin:0 0 16px;
+  font-size:1.25rem;
+  font-weight:600;
+  color:#fff;
+}
+.about-card-body{
+  margin:0;
+  font-family:var(--font-mono);
+  font-size:0.75rem;
+  line-height:1.7;
+  color:var(--sand);
+}

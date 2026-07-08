@@ -1,36 +1,54 @@
-.header{ position:fixed; top:16px; left:0; right:0; z-index:50; }
-.nav{
-  width:min(1160px, 92vw);
-  margin:0 auto;
+.topbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:40;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:12px 14px;
-  border-radius:18px;
-  background:rgba(0,0,0,.35);
-  border:1px solid rgba(255,255,255,.10);
-  backdrop-filter: blur(12px);
+  padding:14px 20px;
+  pointer-events:none;
 }
-.brand{ font-weight:800; letter-spacing:.02em; }
-.navlinks{ display:flex; gap:16px; align-items:center; }
-.navlinks a{ color:rgba(255,255,255,.78); font-size:14px; }
-.navlinks a:hover{ color:var(--gold); }
-
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: .02em;
+.topbar a{ pointer-events:auto; }
+.topbar-brand{
+  font-family:var(--font-mono);
+  font-size:0.65rem;
+  letter-spacing:0.5em;
+  color:var(--sand);
+  text-transform:uppercase;
 }
+.topbar-brand:hover{ color:var(--teal); }
 
-.brand-logo{
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  opacity: 0.9;
+.sidenav{
+  position:fixed;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:40;
+  display:none;
+  flex-direction:column;
+  gap:8px;
+  padding-left:16px;
 }
+@media (min-width:768px){ .sidenav{ display:flex; } }
+.sidenav-link{ display:block; }
 
-.brand:hover .brand-logo{
-  opacity: 5;
+/* Entrance: chrome fades in after the hero panes settle */
+.site .topbar{
+  opacity:0;
+  transform:translateY(-14px);
+  transition:transform 800ms cubic-bezier(0.2,0.8,0.2,1) 1000ms, opacity 800ms ease 1000ms;
+}
+.site .sidenav{
+  opacity:0;
+  transform:translateY(-50%) translateX(-16px);
+  transition:transform 800ms cubic-bezier(0.2,0.8,0.2,1) 1150ms, opacity 800ms ease 1150ms;
+}
+.site-revealed .topbar{ opacity:1; transform:none; }
+.site-revealed .sidenav{ opacity:1; transform:translateY(-50%); }
+
+@media (prefers-reduced-motion: reduce){
+  .site .topbar{ opacity:1; transform:none; transition:none; }
+  .site .sidenav{ opacity:1; transform:translateY(-50%); transition:none; }
 }
